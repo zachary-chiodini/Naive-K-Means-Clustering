@@ -1,1 +1,1 @@
-# naive-k-means-clustering
+# Naive K-Means Clustering

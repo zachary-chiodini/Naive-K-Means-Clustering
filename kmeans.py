@@ -1,4 +1,5 @@
 import numpy as np
+from random import random
 from nptyping import NDArray
 
 class KMeans( object ) :
@@ -31,12 +32,16 @@ class KMeans( object ) :
         '''
         Generates K Centroids
         '''
-        mn = self.X.min( axis = 0 )
-        mx = self.X.max( axis = 0 )
-        d = ( mx - mn ) / ( self.k - 1 )
-        self.C = np.array([]).reshape( 0, len( mn ) )
+        self.C = np.array([]).reshape( 0, self.X[ 0 ].size )
+        mn = [ self.X[ :, j ].min()
+               for j in range( self.X[ 0 ].size ) ]
+        mx = [ self.X[ :, j ].max()
+               for j in range( self.X[ 0 ].size ) ]
         for i in range( self.k ) :
-            self.C = np.vstack( [ self.C, mn + i*d ] )
+            ri = np.empty( self.X[ 0 ].shape )
+            for j in range( self.X[ 0 ].size ) :
+                ri[ j ] = mn[ j ] + ( mx[ j ] - mn[ j ] )*random()
+            self.C = np.vstack( [ self.C, ri ] )
         return
 
     def __update( self : object ) -> None :
@@ -53,5 +58,6 @@ class KMeans( object ) :
                 dtype = bool
                 )
             self.result[ i ] = self.X[ M ]
-            self.C[ i - 1 ] = self.X[ M ].sum( axis = 0 ) / M.sum()
+            self.C[ i - 1 ] = self.X[ M ].sum( axis = 0 ) / M.sum() \
+                              if M.sum() else self.C[ i - 1 ]
         return

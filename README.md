@@ -1,5 +1,7 @@
 # Naive K-Means Clustering
 
+<a href="https://www.sciencedirect.com/science/article/pii/S0031320319301608">Good Recourse</a>
+
 <p align="center">
     <img src="photos/clusters.png">
 </p>

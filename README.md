@@ -1,5 +1,12 @@
 # Naive K-Means Clustering
 
+<p align="justify">
+    This is a module for repeated naive k-means for the pattern recognition and classification of data written in Python.
+</p>
+<p align="left">
+    <img src="photos/dependencies.png" width="244px">
+</p>
+
 <a href="https://www.sciencedirect.com/science/article/pii/S0031320319301608">Good Recourse</a>
 
 <p align="center">

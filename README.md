@@ -2,6 +2,7 @@
 
 <p align="justify">
     This is a module for the repeated k-means clustering method for pattern recognition and classification of data written in Python.
+    This is called naive k-means clustering because optimization methods are not used.
 </p>
 <p align="left">
     <img src="photos/dependencies.png" width="244px">

@@ -12,6 +12,8 @@
     <img src="photos/clusters100.png">
 </p>
 
+<h1>Try It</h1>
+
 ```python
 from kmeans import KMeans
 import pandas as pd, numpy as np

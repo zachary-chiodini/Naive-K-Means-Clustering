@@ -1,3 +1,9 @@
 # Naive K-Means Clustering
-Clustering accuracy for K-means tends to be low.
-Currently optimizing algorithm to work on 15 clusters.
+
+<p align="center">
+    <img src="photos/clusters1.png">
+</p>
+
+<p align="center">
+    <img src="photos/clusters100.png">
+</p>

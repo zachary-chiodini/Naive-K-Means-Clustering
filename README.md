@@ -7,8 +7,7 @@
 <p align="left">
     <img src="photos/dependencies.png" width="244px">
 </p>
-
-<a href="https://www.sciencedirect.com/science/article/pii/S0031320319301608">Good Recourse</a>
+<h1>Mathematical Model</h1>
 
 <p align="center">
     <img src="photos/clusters.png">
@@ -21,6 +20,8 @@
 <p align="center">
     <img src="photos/clusters100.png">
 </p>
+
+<a href="https://www.sciencedirect.com/science/article/pii/S0031320319301608">Good Recourse</a>
 
 <h1>Try It</h1>
 

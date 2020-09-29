@@ -1,7 +1,7 @@
 # Naive K-Means Clustering
 
 <p align="justify">
-    This is a module for repeated naive k-means clustering for pattern recognition and classification of data written in Python.
+    This is a module for the repeated naive k-means clustering method for pattern recognition and classification of data written in Python.
 </p>
 <p align="left">
     <img src="photos/dependencies.png" width="244px">

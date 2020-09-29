@@ -42,31 +42,16 @@ truth = np.sort( truth, axis = 0 )
 
 
 ```python
-table = pd.concat( 
-    [ 
-        pd.DataFrame( 
-            data = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ], 
-            columns = [ 'Centroid' ],
-            dtype = str
-        ),
-        pd.DataFrame( 
-            data = kmeans.C[ :, 0 ], 
-            columns = [ 'K-Means X' ] 
-        ),
-        pd.DataFrame( 
-            data = truth[ :, 0 ], 
-            columns = [ 'True X' ] 
-        ),
-        pd.DataFrame( 
-            data =kmeans.C[ :, 1 ], 
-            columns = [ 'K-Means Y' ] 
-        ),
-        pd.DataFrame( 
-            data = truth[ :, 1 ], 
-            columns = [ 'True Y' ] 
-        ),
-    ],
-    axis = 1
+table = pd.DataFrame(
+    {
+        'Centroid' : [ '1', '2', '3', '4', '5', 
+                       '6', '7', '8', '9', '10', 
+                       '11', '12', '13', '14', '15'],
+        'K-Means X' : kmeans.C[ :, 0 ],
+        'True X'    : truth[ :, 0 ],
+        'K-Means Y' : kmeans.C[ :, 1 ],
+        'True Y'    : truth[ :, 1 ]
+    }
 )
 ```
 

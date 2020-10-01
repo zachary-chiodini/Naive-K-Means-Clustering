@@ -6,7 +6,7 @@
 <p align="left">
     <img src="photos/dependencies.png" width="244px">
 </p>
-<h1>Mathematical Model</h1>
+<h1>Mathematics</h1>
 <p align="center">
     <img src="photos/equations/equation1.png" width=75%>
 </p>

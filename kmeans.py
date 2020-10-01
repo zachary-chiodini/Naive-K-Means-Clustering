@@ -75,8 +75,8 @@ class KMeans( object ) :
                 axis = 0,
                 dtype = bool
                 )
+            self.result[ i ] = self.X[ M ]
             self.C[ i - 1 ] = self.X[ M ].sum( axis = 0 ) / M.sum() \
                               if M.sum() else self.C[ i - 1 ]
-            self.result[ i ] = self.X[ M ]
             self.sse += np.square( self.X[ M ] - self.C[ i - 1 ] ).sum()
         return

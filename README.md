@@ -8,31 +8,31 @@
 </p>
 <h1>Mathematical Model</h1>
 <p align="center">
-    <img src="photos/equation1.png" width=75%>
+    <img src="photos/equations/equation1.png" width=75%>
 </p>
 <p align="center">
-    <img src="photos/equation2.png" width=75%>
+    <img src="photos/equations/equation2.png" width=75%>
 </p>
 <p align="center">
-    <img src="photos/equation3.png" width=75%>
+    <img src="photos/equations/equation3.png" width=75%>
 </p>
 <p align="center">
-    <img src="photos/equation4.png" width=75%>
+    <img src="photos/equations/equation4.png" width=75%>
 </p>
 <p align="center">
-    <img src="photos/equation5.png" width=75%>
+    <img src="photos/equations/equation5.png" width=75%>
 </p>
 <p align="center">
-    <img src="photos/equation6.png" width=75%>
+    <img src="photos/equations/equation6.png" width=75%>
 </p>
 <p align="center">
-    <img src="photos/equation7.png" width=75%>
+    <img src="photos/equations/equation7.png" width=75%>
 </p>
 <p align="center">
-    <img src="photos/equation8.png" width=75%>
+    <img src="photos/equations/equation8.png" width=75%>
 </p>
 <p align="center">
-    <img src="photos/equation9.png" width=75%>
+    <img src="photos/equations/equation9.png" width=75%>
 </p>
 
 <p align="center">

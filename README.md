@@ -34,7 +34,7 @@
 <p align="center">
     <img src="photos/equations/equation9.png" width=75%>
 </p>
-
+<h1>Example</h1>
 <p align="center">
     <img src="photos/clusters.png">
 </p>

@@ -68,15 +68,15 @@ class KMeans( object ) :
         '''
         self.sse = 0.0
         for i in range( 1, self.k + 1 ) :
-            M = np.prod(
+            B = np.prod(
                 [ np.square( self.X - self.C[ i - 1 ] ).sum( axis = 1 ) <=\
                   np.square( self.X - self.C[ j % self.k ] ).sum( axis = 1 )
                   for j in range( i, i + self.k - 1 ) ],
                 axis = 0,
                 dtype = bool
                 )
-            self.result[ i ] = self.X[ M ]
-            self.C[ i - 1 ] = self.X[ M ].sum( axis = 0 ) / M.sum() \
-                              if M.sum() else self.C[ i - 1 ]
-            self.sse += np.square( self.X[ M ] - self.C[ i - 1 ] ).sum()
+            self.result[ i ] = self.X[ B ]
+            self.C[ i - 1 ] = self.X[ B ].sum( axis = 0 ) / B.sum() \
+                              if B.sum() else self.C[ i - 1 ]
+            self.sse += np.square( self.X[ B ] - self.C[ i - 1 ] ).sum()
         return

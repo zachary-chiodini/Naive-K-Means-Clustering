@@ -26,7 +26,12 @@
 </p>
 <hr>
 <p align="justify">
-    The objective of k-means classification is to generate <
+    The objective of k-means classification is to classify <i>k</i> clusters in the data <i><b>X</b></i> into <i>k</i> sets
+    by generating <i>k</i> centroids that sit at the center of each cluster.
+    A data point <i>x<sub>h</sub></i> is part of the set <i>s<sub>i</sub></i> if the squared distance between <i>x<sub>h</sub></i>
+    and the centroid <i>c<sub>i</sub></i> is the less than or equal to the squared distance between <i>x<sub>h</sub></i> and all other centroids.
+    This is described using set-builder notation in (3). If the smallest squared distance is equal between two or more centroids, 
+    the data point <i>x<sub>h</sub></i> will be classifed into two or more sets.
 </p>
 <p align="center">
     <img src="photos/equations/equation3.png" width=75%>

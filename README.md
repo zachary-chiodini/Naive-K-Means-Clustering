@@ -17,7 +17,7 @@
 </p>
 <hr>
 <p align="justify">
-    The centroids used to classify the data are stored as a separate matrix <i><b>X</b></i> (2),
+    The centroids used to classify the data are stored as a separate matrix <i><b>C</b></i> (2),
     in which each row <i>c<sub>i</sub></i> is an <i>n</i>-dimensional centroid and <i>k</i> is the number of centroids.
 </p>
 <hr>

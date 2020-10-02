@@ -38,6 +38,9 @@
     <img src="photos/equations/equation3.png" width=75%>
 </p>
 <hr>
+<p align="justify">
+    
+</p>
 <p align="center">
     <img src="photos/equations/equation4.png" width=75%>
 </p>
@@ -53,6 +56,7 @@
 <p align="center">
     <img src="photos/equations/equation8.png" width=75%>
 </p>
+<h1>Algorithm</h1>
 <p align="center">
     <img src="photos/equations/equation9.png" width=75%>
 </p>

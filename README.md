@@ -7,11 +7,22 @@
     <img src="photos/dependencies.png" width="244px">
 </p>
 <h1>Mathematics</h1>
+<p align="justify">
+    The data that will be classified is stored as a matrix <i><b>X</b></i> (1), 
+    in which each row <i>x<sub>i</sub></i> is an <i>n</i>-dimensional data point and <i>m</i> is the number of data points.
+</p>
 <p align="center">
     <img src="photos/equations/equation1.png" width=75%>
 </p>
+<p align="justify">
+    The centroids used to classify the data are stored as a separate matrix <i><b>X</b></i> (2),
+    in which each row <i>c<sub>i</sub></i> is an <i>n</i>-dimensional centroid and <i>k</i> is the number of centroids.
+</p>
 <p align="center">
     <img src="photos/equations/equation2.png" width=75%>
+</p>
+<p align="justify">
+    The objective of k-means classification is to generate <
 </p>
 <p align="center">
     <img src="photos/equations/equation3.png" width=75%>

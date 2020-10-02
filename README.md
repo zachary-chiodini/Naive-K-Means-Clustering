@@ -33,9 +33,11 @@
     This is described using set-builder notation in (3). If the smallest squared distance is equal between two or more centroids, 
     the data point <i>x<sub>h</sub></i> will be classifed into two or more sets.
 </p>
+<hr>
 <p align="center">
     <img src="photos/equations/equation3.png" width=75%>
 </p>
+<hr>
 <p align="center">
     <img src="photos/equations/equation4.png" width=75%>
 </p>

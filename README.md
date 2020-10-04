@@ -8,7 +8,7 @@
 </p>
 <h1>Mathematics</h1>
 <p align="justify">
-    The data that will be classified is stored as a matrix <i><b>X</b></i> (1), 
+    In the k-means module, the data to be classified is stored as a matrix <i><b>X</b></i> (1), 
     in which each row <i>x<sub>i</sub></i> is an <i>n</i>-dimensional data point and <i>m</i> is the number of data points.
 </p>
 <hr>
@@ -17,7 +17,8 @@
 </p>
 <hr>
 <p align="justify">
-    The centroids used to classify the data are stored as a separate matrix <i><b>C</b></i> (2),
+    K-means classification tries to find the center of each cluster, which is called a centroid.
+    The centroids are stored as a separate matrix <i><b>C</b></i> (2),
     in which each row <i>c<sub>i</sub></i> is an <i>n</i>-dimensional centroid and <i>k</i> is the number of centroids.
 </p>
 <hr>
@@ -26,9 +27,10 @@
 </p>
 <hr>
 <p align="justify">
-    The objective of k-means classification is to classify <i>k</i> clusters in the data <i><b>X</b></i> into <i>k</i> sets
-    by generating <i>k</i> centroids that sit at the center of each cluster.
-    A data point <i>x<sub>h</sub></i> is part of the set <i>s<sub>i</sub></i> if the squared distance between <i>x<sub>h</sub></i>
+    The <i>k</i> centroids are used to identify <i>k</i> clusters in the data.
+    Each data point is classified according to its squared distance from each centroid.
+    The centroid with the minimum squared distance is the cluster that the data point belongs to.
+    Formally, a data point <i>x<sub>h</sub></i> is part of the set <i>s<sub>i</sub></i> if the squared distance between <i>x<sub>h</sub></i>
     and the centroid <i>c<sub>i</sub></i> is the less than or equal to the squared distance between <i>x<sub>h</sub></i> and all other centroids.
     This is described using set-builder notation in (3). If the smallest squared distance is equal between two or more centroids, 
     the data point <i>x<sub>h</sub></i> will be classifed into two or more sets.
@@ -39,7 +41,8 @@
 </p>
 <hr>
 <p align="justify">
-    
+    The sum of squared distances is the sum of squared error <i>SSE</i> (4).
+    The <i>SSE</i> should be at a minimum value if the centroids 
 </p>
 <p align="center">
     <img src="photos/equations/equation4.png" width=75%>

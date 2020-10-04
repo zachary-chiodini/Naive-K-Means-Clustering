@@ -80,7 +80,7 @@
 <hr>
 <p align="justify">
     The location of the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> is then updated in (8),
-    which is the mean of all the indexed data in <i><b>X</b></i>[<i><b>B</b></i>].
+    which is the mean of each component in the indexed data.
 </p>
 <hr>
 <p align="center">

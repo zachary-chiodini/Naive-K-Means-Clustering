@@ -41,15 +41,24 @@
 </p>
 <hr>
 <p align="justify">
-    The sum of squared distances is the sum of squared error <i>SSE</i> (4).
-    The <i>SSE</i> should be at a minimum value if the centroids 
+    The sum of squared distances is the sum of squared error <i>SSE</i> (4), 
+    where <i>x<sub>h</sub></i> is a data point in the set <i>s<sub>i</sub></i> that belongs to the <i>i<sup>th</sup></i> cluster having a centroid at <i>c<sub>i</sub></i>.
+    The <i>SSE</i> should be at a minimum value when all centroids are at there optimal positions.
 </p>
+<hr>
 <p align="center">
     <img src="photos/equations/equation4.png" width=75%>
 </p>
+<hr>
+<p align="justify">
+    To help simplify the mathematical notation, 
+    a matrix containing all the squared distances of each data point in <i><b>X</b></i> from the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> is defined in (5).
+</p>
+<hr>
 <p align="center">
     <img src="photos/equations/equation5.png" width=75%>
 </p>
+<hr>
 <p align="center">
     <img src="photos/equations/equation6.png" width=75%>
 </p>

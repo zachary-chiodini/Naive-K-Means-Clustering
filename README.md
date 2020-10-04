@@ -29,7 +29,7 @@
 <p align="justify">
     The <i>k</i> centroids are used to identify <i>k</i> clusters in the data.
     Each data point is classified according to its squared distance from each centroid.
-    The centroid with the minimum squared distance is the cluster that the data point belongs to.
+    The centroid with the minimum squared distance is the cluster the data point belongs to.
     Formally, a data point <i>x<sub>h</sub></i> is part of the set <i>s<sub>i</sub></i> if the squared distance between <i>x<sub>h</sub></i>
     and the centroid <i>c<sub>i</sub></i> is the less than or equal to the squared distance between <i>x<sub>h</sub></i> and all other centroids.
     This is described using set-builder notation in (3). If the smallest squared distance is equal between two or more centroids, 

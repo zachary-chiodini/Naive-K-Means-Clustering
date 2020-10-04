@@ -132,9 +132,7 @@
     Since the centroids are initialized randomly, given a number of attempts, the optimal initialization will eventually be found.
     All of the clusters and centroids found are optimal.
     However, a few points near the oblong cluster on the lower right of the plot are classified incorrectly.
-    This is another drawback to k-means clustering. The k-means model places a hyper-sphere at the center of each cluster, 
-    with a radius defined by the most distant point in the cluster.
-    This means it does not account for the covariance or shape of the cluster.
+    This is another drawback to k-means clustering. The k-means model assumes all clusters are spherical.
     For a detailed description of the pros and cons of k-mean clustering, 
     refer to <a href="https://www.sciencedirect.com/science/article/pii/S0031320319301608">This Recourse</a>.
 </p>

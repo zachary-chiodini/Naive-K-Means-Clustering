@@ -117,7 +117,7 @@
     The result of the algorithm is shown below. The black circles show the locations of the centroids.
     Each cluster is color coded. Lines connect the data points to the centroid they are closest to.
     The algorithm failed to locate all of the clusters. Some centroids appear in between clusters.
-    Others appear within the same cluster. This is a drawback of the k-means clustering method.
+    Others appear within the same cluster. This is a drawback to k-means clustering.
     It found stable clustering centers that are not optimal.
     The final locations of the centroids depend on how the they are initiated.
 </p>

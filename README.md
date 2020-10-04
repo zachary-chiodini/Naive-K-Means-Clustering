@@ -52,7 +52,7 @@
 <hr>
 <p align="justify">
     To simplify the mathematical notation, 
-    a matrix containing all the squared distances of each data point in <i><b>X</b></i> from the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> is defined in (5).
+    a column vector containing all the squared distances of each data point in <i><b>X</b></i> from the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> is defined in (5).
 </p>
 <hr>
 <p align="center">
@@ -61,7 +61,7 @@
 <hr>
 <p align="justify">
     The following boolean operation (6), where the less than or equal to operation is applied element-wise, 
-    creates a column matrix in which all data points that belong to the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> 
+    creates a column vector in which all data points that belong to the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> 
     will result in a true value and false otherwise.
 </p>
 <hr>

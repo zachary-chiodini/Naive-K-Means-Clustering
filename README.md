@@ -94,8 +94,8 @@
     The location of each centroid is initialized as a random data point in <i><b>X</b></i>.
     The matrix <i><b>C</b><sub>prev</sub></i> is initialized as an empty matrix.
     When the location of each centroid is not changed, 
-    when the previous matrix <i><b>C</b><sub>prev</sub></i> equals the current matrix <i><b>C</b></i>,
-    the algorithm completes and then the <i>SSE</i> is calculated.
+    the previous matrix <i><b>C</b><sub>prev</sub></i> equals the current matrix <i><b>C</b></i>,
+    and the algorithm completes. Then, the <i>SSE</i> is calculated.
 </p>
 <hr>
 <p align="center">

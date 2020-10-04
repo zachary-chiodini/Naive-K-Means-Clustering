@@ -43,7 +43,7 @@
 <p align="justify">
     The sum of squared distances is the sum of squared error <i>SSE</i> (4), 
     where <i>x<sub>h</sub></i> is a data point in the set <i>s<sub>i</sub></i> that belongs to the <i>i<sup>th</sup></i> cluster having a centroid at <i>c<sub>i</sub></i>.
-    The <i>SSE</i> should be at a minimum value when all centroids are at there optimal positions.
+    The <i>SSE</i> should be at a minimum value when all centroids are at there optimal locations.
 </p>
 <hr>
 <p align="center">
@@ -51,7 +51,7 @@
 </p>
 <hr>
 <p align="justify">
-    To help simplify the mathematical notation, 
+    To simplify the mathematical notation, 
     a matrix containing all the squared distances of each data point in <i><b>X</b></i> from the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> is defined in (5).
 </p>
 <hr>
@@ -59,16 +59,43 @@
     <img src="photos/equations/equation5.png" width=75%>
 </p>
 <hr>
+<p align="justify">
+    The following boolean operation (6), where the less than or equal to operation is applied element-wise, 
+    creates a column matrix in which all data points that belong to the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> 
+    will result in a true value and false otherwise.
+</p>
+<hr>
 <p align="center">
     <img src="photos/equations/equation6.png" width=75%>
 </p>
+<hr>
+<p align="justify">
+    The resulting boolean matrix can be used to index the data in <i><b>X</b></i>. 
+    The indexed data contains all the data points that belong to the set <i>s<sub>i</sub></i> (7).
+</p>
+<hr>
 <p align="center">
     <img src="photos/equations/equation7.png" width=75%>
 </p>
+<hr>
+<p align="justify">
+    The location of the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> is then updated in (8),
+    which is the mean of all the indexed data in <i><b>X</b></i>[<i><b>B</b></i>].
+</p>
+<hr>
 <p align="center">
     <img src="photos/equations/equation8.png" width=75%>
 </p>
 <h1>Algorithm</h1>
+<p align="justify">
+    The algorithm for the k-means module is shown below. 
+    The location of each centroid is initialized as a random data point in <i><b>X</b></i>.
+    The matrix <i><b>C</b><sub>prev</sub></i> is initialized as an empty matrix.
+    When the location of each centroid is not changed, 
+    when the previous matrix <i><b>C</b><sub>prev</sub></i> equals the current matrix <i><b>C</b></i>,
+    the algorithm completes and then the <i>SSE</i> is calculated.
+</p>
+<hr>
 <p align="center">
     <img src="photos/equations/equation9.png" width=75%>
 </p>

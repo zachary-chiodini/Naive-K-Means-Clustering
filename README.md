@@ -86,6 +86,7 @@
 <p align="center">
     <img src="photos/equations/equation8.png" width=75%>
 </p>
+<hr>
 <h1>Algorithm</h1>
 <p align="justify">
     The algorithm for the k-means module is shown below. 
@@ -99,6 +100,7 @@
 <p align="center">
     <img src="photos/equations/equation9.png" width=75%>
 </p>
+<hr>
 <h1>Example</h1>
 <p align="center">
     <img src="photos/clusters.png">

@@ -79,8 +79,8 @@
 </p>
 <hr>
 <p align="justify">
-    The location of the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> is then updated in (8) and given a new location,
-    which is the mean of each component in the indexed data.
+    The location of the <i>i<sup>th</sup></i> centroid <i>c<sub>i</sub></i> is then updated in (8).
+    The new location is the mean of each component in the indexed data.
     6-8 are repeated for all centroids until the updated location of each centroid no longer changes.
 </p>
 <hr>

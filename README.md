@@ -70,7 +70,7 @@
 </p>
 <hr>
 <p align="justify">
-    The resulting boolean matrix can be used to index the data in <i><b>X</b></i>. 
+    Using NumPy, the resulting boolean matrix can be used to index the data in <i><b>X</b></i>. 
     The indexed data contains all the data points that belong to the set <i>s<sub>i</sub></i> (7).
 </p>
 <hr>
@@ -102,32 +102,65 @@
 </p>
 <hr>
 <h1>Example</h1>
+<p align="justify">
+    The data found in "clusters.csv" is plotted below. 
+    It contains synthetic 2-dimensional data having 15 clusters. 
+    The dots represent each data point.
+</p>
+<hr>
 <p align="center">
     <img src="photos/clusters.png">
 </p>
-
+<hr>
+<p align="justify">
+    The result of the algorithm is shown below. The black circles show the locations of the centroids.
+    Each cluster is color coded. Lines connect the data points to the centroid they are closest to.
+    The algorithm failed to locate all of the clusters. Some centroids appear in between clusters.
+    Others appear within the same cluster. This is a drawback of the k-means clustering method.
+    It found stable clustering centers that are not optimal.
+    The final locations of the centroids depend on how the they are initiated.
+</p>
+<hr>
 <p align="center">
     <img src="photos/clusters1.png">
 </p>
-
+<hr>
+<p align="justify">
+    Running the algorithm 100 times, initiating the centroids each time, and selecting the centroids which produce the smallest <i>SSE</i>,
+    produces the plot below. This is called repeated k-means clustering. 
+    Since the centroids are initialized randomly, given a number of attempts, the optimal initiation will eventually be found.
+    All of the clusters and centroids found are optimal.
+    However, a few points near the oblong cluster on the lower right of the plot are classified incorrectly.
+    This is another drawback to k-means clustering. The k-means model places a circle a hyper-sphere at the center of each cluster, 
+    with a radius defined by the most distant point in the cluster.
+    This means it does not account for the covariance or shape of the cluster.
+    For a detailed description of the pros and cons of k-mean clustering, 
+    refer to <a href="https://www.sciencedirect.com/science/article/pii/S0031320319301608">This Recourse</a>.
+</p>
+<hr>
 <p align="center">
     <img src="photos/clusters100.png">
 </p>
-
-<a href="https://www.sciencedirect.com/science/article/pii/S0031320319301608">Good Recourse</a>
+<hr>
 
 <h1>Try It</h1>
+
+<p align="justify">
+    Importing the k-means module and reading the "clusters.csv" file.
+</p>
 
 ```python
 from kmeans import KMeans
 import pandas as pd, numpy as np
 ```
 
-
 ```python
 df = pd.read_csv( 'clusters.csv' )
 ```
 
+<p align="justify">
+    Converting the data into a matrix, setting <i>k</i> to 15 and repeating the classification 100 times.
+</p>
 
 ```python
 X = df.to_numpy() / 100000
@@ -135,12 +168,20 @@ kmeans = KMeans( X, 15 )
 kmeans.classify( repeat = 100 )
 ```
 
+<p align="justify">
+    Sorting the centroids found by the k-means module and reading and sorting the contents of the file "centroids.csv,"
+    which contains the actual locations of each centroid.
+</p>
 
 ```python
 kmeans.C = np.sort( kmeans.C, axis = 0 ).round( 5 )
 truth = pd.read_csv( 'centroids.csv', header = None ).to_numpy() / 100000
 truth = np.sort( truth, axis = 0 )
 ```
+
+<p align="justify">
+    Creating a dataframe to compare the computed centroid locations with their actual locations.
+</p>
 
 
 ```python
@@ -157,6 +198,9 @@ table = pd.DataFrame(
 )
 ```
 
+<p align="justify">
+    Creating a table with help from the "table.py" module.
+</p>
 
 ```python
 from table import render_table
@@ -168,6 +212,11 @@ render_table(
 )
 plt.show()
 ```
+
+<p align="justify">
+    Comparing the centroid locations computed from the repeated k-means clustering module with their true locations.
+    The computed locations are very close to the actual values.
+</p>
 
 <p align="center">
     <img src="photos/table.png">

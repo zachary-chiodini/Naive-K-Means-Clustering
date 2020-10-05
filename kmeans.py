@@ -14,8 +14,8 @@ class KMeans( object ) :
         self.X = X     # input matrix
         self.k = k     # number of clusters
         self.sse = 0.0 # sum of squared errors
-        self.C = np.array([])
-        self.result = {}
+        self.C = np.array([]) # centroids
+        self.result = {}      # classified data { cluster i : Set i }
         
 
     def classify( self : object,

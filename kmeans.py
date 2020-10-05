@@ -15,7 +15,7 @@ class KMeans( object ) :
         self.k = k     # number of clusters
         self.sse = 0.0 # sum of squared errors
         self.C = np.array([]) # centroids
-        self.result = {}      # classified data { cluster i : Set i }
+        self.result = {}      # classified data { cluster i : set i }
         
 
     def classify( self : object,

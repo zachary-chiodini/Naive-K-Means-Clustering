@@ -131,7 +131,7 @@
     Plotted below is the result from running the algorithm 100 times, 
     initiating the centroids each time, and then selecting the clusters and centroids which produce the smallest <i>SSE</i>. 
     This is called repeated k-means clustering. 
-    Since the centroids are initialized randomly, given a number of attempts, the optimal initialization will eventually be found.
+    Since the centroids are initialized randomly, given a sufficiently large number of attempts, the optimal initialization will eventually be found.
     All of the clusters and centroids found are optimal.
     However, a few points near the oblong cluster on the lower right of the plot are classified incorrectly.
     This is another drawback to k-means clustering. The k-means model assumes all clusters are spherical.

@@ -115,7 +115,7 @@
 </p>
 <hr>
 <p align="justify">
-    The result of the algorithm is shown below. The black circles show the locations of the centroids.
+    The result of the algorithm is plotted below. The black circles show the locations of the centroids.
     Each cluster is color coded. Lines connect the data points to the cluster centroid they belong to.
     The algorithm failed to locate all of the clusters. Some centroids appear in between clusters.
     Others appear within the same cluster. This is a drawback to k-means clustering.
@@ -128,7 +128,7 @@
 </p>
 <hr>
 <p align="justify">
-    PLotted below is the result from running the algorithm 100 times, 
+    Plotted below is the result from running the algorithm 100 times, 
     initiating the centroids each time, and then selecting the clusters and centroids which produce the smallest <i>SSE</i>. 
     This is called repeated k-means clustering. 
     Since the centroids are initialized randomly, given a number of attempts, the optimal initialization will eventually be found.

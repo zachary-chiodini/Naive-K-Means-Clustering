@@ -20,6 +20,7 @@
     K-means classification tries to find the center of each cluster, which is called a centroid.
     The centroids are stored as a separate matrix <i><b>C</b></i> (2),
     in which each row <i>c<sub>i</sub></i> is an <i>n</i>-dimensional centroid and <i>k</i> is the number of centroids.
+    The location of each centroid is typically initialized as a random data point in <i><b>X</b></i>.
 </p>
 <hr>
 <p align="center">
